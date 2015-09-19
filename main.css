@@ -136,7 +136,8 @@ footer a {
 
 .scenario {
     width: 80%;
-    margin: auto;
+    padding-bottom: 3em;
+    margin: 0 auto;
 }
 
 .scenario-item {
@@ -146,6 +147,23 @@ footer a {
     padding-top: 3em;
     position: relative;
     height: 25em;
+    margin-bottom: 1em;
+}
+
+.scenario-item figure {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.scenario-item figure  img {
+    float: left;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 15em;
+    margin: auto;
 }
 
 .banana img {
@@ -156,4 +174,15 @@ footer a {
     right: 0;
     bottom: 0;
     margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .front {
+        padding-top: 3em;
+        font-size: 1.5em;
+        min-height: 7em;
+    }
+    .scenario {
+        width: 100%;
+    }
 }
